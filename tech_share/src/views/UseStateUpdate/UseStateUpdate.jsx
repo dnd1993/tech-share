@@ -20,7 +20,7 @@ function UseStateUpdate() {
       <form className="flex justify-center">
         <label htmlFor="search" className="text-4xl">Search:</label>
         <input
-          className="w-60 bg-stone-200 border rounder-lg active:border-black"
+          className="pl-2 w-60 bg-stone-200 border rounder-lg active:border-black"
           type="text"
           id="search"
           name="search"
