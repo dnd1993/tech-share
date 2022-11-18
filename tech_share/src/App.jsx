@@ -5,6 +5,7 @@ import SharedLayout from './views/Home/SharedLayout';
 import Home from './views/Home/Home';
 import UseStateUpdate from './views/UseStateUpdate/UseStateUpdate';
 import UseStateDerive from './views/UseStateDerive/UseStateDerive';
+import Resources from './views/Resources/Resources';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="example-one" element={<UseStateUpdate />} />
           <Route path="example-two" element={<UseStateDerive />} />
+          <Route path="resources" element={<Resources />} />
         </Route>
       </Routes>
     </BrowserRouter>

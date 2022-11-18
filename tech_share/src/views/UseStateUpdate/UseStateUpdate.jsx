@@ -1,24 +1,21 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable no-console */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function UseStateUpdate() {
   const [searchInput, setSearchInput] = useState('');
-  const callApi = () => {
-    console.log(searchInput);
-  };
   const onChange = (e) => {
     setSearchInput(e.target.value);
-    callApi();
+    // console.logging instead of fetching for the demo purposes
   };
-  // useEffect(() => {
-  //   callApi();
-  // }, [searchInput]);
+  useEffect(() => {
+    console.log(searchInput);
+  }, [searchInput]);
   return (
     <>
       <h1 className="text-red-700 mb-7">useState doesn&apos;t update immediately</h1>
       <form className="flex justify-center">
-        <label htmlFor="search" className="text-4xl">Search:</label>
+        <label htmlFor="search" className="text-4xl mr-2">Search:</label>
         <input
           className="pl-2 w-60 bg-stone-200 border rounder-lg active:border-black"
           type="text"

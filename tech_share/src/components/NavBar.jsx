@@ -26,9 +26,16 @@ const NavBar = () => {
       <NavLink
         to="/example-two"
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        className="px-5 py-4 bg-black rounded-md text-white text-2xl hover:text-white hover:bg-red-700"
+        className="px-5 py-4 bg-black rounded-md text-white text-2xl hover:text-white hover:bg-red-700 mr-7"
       >
         useState#2
+      </NavLink>
+      <NavLink
+        to="/resources"
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        className="px-5 py-4 bg-black rounded-md text-white text-2xl hover:text-white hover:bg-red-700"
+      >
+        Links
       </NavLink>
     </nav>
   );

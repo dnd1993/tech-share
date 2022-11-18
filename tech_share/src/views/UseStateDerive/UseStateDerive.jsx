@@ -1,12 +1,12 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/function-component-definition */
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const UseStateDerive = () => {
   const [products, setProducts] = useState([
-    { id: 1, title: "black sneakers", quantity: 1 },
-    { id: 2, title: "red t-shirt", quantity: 1 },
-    { id: 3, title: "blue jeans", quantity: 1 },
+    { id: 1, title: 'black sneakers', quantity: 1 },
+    { id: 2, title: 'red t-shirt', quantity: 1 },
+    { id: 3, title: 'blue jeans', quantity: 1 },
   ]);
 
   const [selectedProduct, setSelectedProduct] = useState({});
